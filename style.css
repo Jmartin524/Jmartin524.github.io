@@ -2,49 +2,76 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #167198;
-    color: #fff;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text color */
 }
 
 header {
-    background: #167198;
+    position: relative;
+    background-image: linear-gradient(to bottom, #167198, #444);
+    height: 4rem; /* Adjust the header height to your liking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
     list-style: none;
-    background: #444;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin-right: 2rem; /* Adjust the margin between menu items */
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    padding: 0.5rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Hover effect */
-    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 main {
     padding: 1rem;
-    background-color: #f9f9f9; /* Light background */
-    color: #333; /* Dark text color */
+    max-width: 800px; /* Adjust the maximum width of the main content */
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background: #167198;
+    background-image: linear-gradient(to bottom, #167198, #444);
+    height: 4rem; /* Adjust the footer height to your liking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
     color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+}
+
+/* Add some spacing between elements for better readability */
+body {
+    margin-bottom: 5rem;
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+main {
+    margin-top: 4rem;
+}
+
+footer {
+    margin-top: 3rem;
 }
