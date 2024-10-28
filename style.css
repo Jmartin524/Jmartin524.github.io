@@ -7,71 +7,59 @@ body {
 }
 
 header {
-    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
     background-image: linear-gradient(to bottom, #167198, #444);
-    height: 4rem; /* Adjust the header height to your liking */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
     color: #fff;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul li {
-    margin-right: 2rem; /* Adjust the margin between menu items */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-main {
     padding: 1rem;
-    max-width: 800px; /* Adjust the maximum width of the main content */
-    margin: 0 auto;
-    background-color: #f9f9f9; /* Light gray background */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-image: linear-gradient(to bottom, #167198, #444); /* Match header gradient */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: sticky; /* Keeps the sidebar in view when scrolling */
+    top: 0;
+    height: calc(100vh - 80px); /* Full height minus header */
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #f9f9f9;
+}
+
+.main-content {
+    flex-grow: 1; /* Allow main content to fill remaining space */
+    padding: 20px;
+    margin-left: 20px; /* Keep space for the fixed sidebar */
+    box-sizing: border-box;
 }
 
 footer {
     background-image: linear-gradient(to bottom, #167198, #444);
-    height: 4rem; /* Adjust the footer height to your liking */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
     color: #fff;
-}
-
-/* Add some spacing between elements for better readability */
-body {
-    margin-bottom: 5rem;
-}
-
-header {
-    margin-bottom: 4rem;
-}
-
-main {
-    margin-top: 4rem;
-}
-
-footer {
-    margin-top: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
