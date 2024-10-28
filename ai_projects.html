@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Projects</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ai_projects.html">AI Projects</a></li>
+                    <li><a href="data_projects.html">Data Science Projects</a></li>
+                    <li><a href="other_projects.html">Other Projects</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>AI Projects</h1>
+            </header>
+
+            <section id="ai-projects">
+                <h2 style="text-decoration: underline;">Featured AI Projects:</h2>
+                <ul>
+                    <li>
+                        <h3>DuckEE RAG.</h3>
+                        <img src="assets/Duckee.gif" alt="Your Name" style="width: 450px; height: 400px;" />
+                        <p>DuckEE is an AI-driven content retrieval and recommendation system, designed to assist users with their queries using an advanced Retrieval-Augmented Generation (RAG) framework. It integrates a robust neural network to analyze and retrieve information from a local knowledge base of PDFs and text documents. Additionally, DuckEE incorporates a feedback loop component, allowing it to adapt and optimize its content suggestions based on user interactions. This enhances the relevance of information provided, making the system more intuitive over time. The project includes a PyQt5-based graphical interface, ensuring a user-friendly experience with features like text-to-speech options for accessibility.</p>
+                        <a href="https://github.com/Jmartin524/DuckEE" target="_blank">View Project</a>
+                    </li>
+                    <li>
+                        <h3>Generating New Stories with Tolkien</h3>
+                        <p>
+                            This project is a Python-based story generator that utilizes the essence of J.R.R. Tolkien's narrative style to create engaging short stories. The generator reads from multiple text files containing Tolkien's works and dynamically modifies a base story based on user prompts. By introducing character elements and adjusting the tone, the generator crafts unique tales that resonate with the rich lore of Middle-earth.
+                        </p>
+                        
+                        <p><strong>Key Features:</strong></p>
+                        
+                        <p>
+                            <strong>Dynamic Modifications:</strong> Enhances stories based on keywords from user prompts.<br>
+                            <strong>Character Introduction:</strong> Incorporates characters that fit the narrative context.<br>
+                            <strong>Sentiment Analysis:</strong> Adjusts the story's tone based on the emotional content of the prompt.<br>
+                            <strong>Randomized Story Selection:</strong> Chooses a base story randomly from a collection of texts to ensure variety in outputs.
+                        </p>
+                        
+                        <p>
+                            This project demonstrates a blend of natural language processing and creative writing, offering an interactive way to experience Tolkien’s storytelling style.
+                        </p>
+                        
+                        <a href="https://www.kaggle.com/code/jeffmartinmba/story-generator-based-on-tolkien" target="_blank">View Project</a>
+                    </li>
+                    <li>
+                        <h3>Using AI and Neural Netwokrs to Learn Tetris</h3>
+                        <img src="assets/TetrisDQN-ezgif.com-resize.gif" alt="Your Name" style="width: 250px; height: 400px;" />
+                        <p>The DQN agent learns to play Tetris through a reinforcement learning process, interacting with the environment by taking actions, observing outcomes, and receiving rewards. Each experience—comprising the state, action, reward, next state, and done flag—is stored in a replay memory. This allows the agent to sample random experiences during training, breaking the correlation between consecutive actions.
+
+                            After each action, the agent updates its neural network by calculating the target Q-value based on the received reward and the maximum Q-value of the subsequent state. This update uses Mean Squared Error (MSE) loss to refine the model.
+                            
+                            Initially, the agent employs an epsilon-greedy strategy with high exploration (random actions). Over time, epsilon decreases, encouraging the agent to exploit its learned knowledge. Each episode enriches the agent's experience, enabling it to recognize patterns in Tetris and improve its performance, ultimately maximizing its score.</p>
+                        <a href="https://github.com/Jmartin524/DQN_Tetris" target="_blank">View Project</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jeff Martin. All rights reserved.</p>
+    </footer>
+</body>
+</html>
