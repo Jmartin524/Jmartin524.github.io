@@ -19,7 +19,7 @@ header {
 }
 
 .sidebar {
-    width: 250px; /* Fixed width for sidebar */
+    width: 350px; /* Fixed width for sidebar */
     background-image: linear-gradient(to bottom, #167198, #444); /* Match header gradient */
     color: white;
     padding: 20px;
